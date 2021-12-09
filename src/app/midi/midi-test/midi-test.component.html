@@ -1,0 +1,14 @@
+<section class="devices">
+    <article *ngFor="let device of devices">
+      <header>{{device.manufacturer}}</header>
+      <p>{{device.name}}</p>
+      <button (click)="changeStatus(device.id)">{{ device.isListened ? 'Unsubscribe' : 'Subscribe'}}</button>
+    </article>
+</section>
+
+{{content}}
+<table>
+  <tr *ngFor="let el of content">
+    <td>{{ el }}</td>
+  </tr>
+</table>
